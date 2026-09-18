@@ -1,0 +1,365 @@
+{
+  "format": "velxio-project",
+  "version": 1,
+  "exportedAt": "2026-09-18T06:51:38.709Z",
+  "name": "kumaraguru",
+  "boards": [
+    {
+      "id": "esp32-devkit-c-v4",
+      "boardKind": "esp32-devkit-c-v4",
+      "x": 171.12183023410316,
+      "y": 131.1812883707687,
+      "activeFileGroupId": "group-esp32-devkit-c-v4",
+      "languageMode": "arduino",
+      "serialBaudRate": 115200
+    }
+  ],
+  "fileGroups": {
+    "group-esp32-devkit-c-v4": [
+      {
+        "name": "sketch.ino",
+        "content": "void setup() {\n  pinMode(25, OUTPUT);\n  pinMode(26, OUTPUT);\n  pinMode(27, OUTPUT);\n\n\n  \n}\n\nvoid loop() {\n\n \n  digitalWrite(25, HIGH);\n  digitalWrite(26, LOW);\n  digitalWrite(27, LOW);\n  delay(5000);\n\n  \n  digitalWrite(25, LOW);\n  digitalWrite(26, HIGH);\n  digitalWrite(27, LOW);\n  delay(1500);\n\n  \n  digitalWrite(25, LOW);\n  digitalWrite(26, LOW);\n  digitalWrite(27, HIGH);\n  delay(6000);\n}\n"
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "led_1789711120454_kfe4x5k8e",
+      "metadataId": "led",
+      "x": 32.453453595557065,
+      "y": 90.24107693622535,
+      "properties": {
+        "value": false,
+        "brightness": 1,
+        "color": "red",
+        "lightColor": null,
+        "label": "",
+        "flip": false
+      }
+    },
+    {
+      "id": "led_1789711149902_sggt2aj0i",
+      "metadataId": "led",
+      "x": -10.793845026006585,
+      "y": 178.33850351486063,
+      "properties": {
+        "value": false,
+        "brightness": 1,
+        "color": "yellow",
+        "lightColor": null,
+        "label": "",
+        "flip": false
+      }
+    },
+    {
+      "id": "resistor_220_1789711298692_mwxcg4ayu",
+      "metadataId": "resistor-220",
+      "x": 44.956666584242996,
+      "y": 154.64453608050457,
+      "properties": {
+        "value": "220",
+        "rotation": 180
+      }
+    },
+    {
+      "id": "resistor_220_1789711399007_lvjef9gz6",
+      "metadataId": "resistor-220",
+      "x": 31.019038681680613,
+      "y": 225.0295569884446,
+      "properties": {
+        "value": "220",
+        "rotation": 180
+      }
+    },
+    {
+      "id": "led_1789711170444_u9s2hzej7",
+      "metadataId": "led",
+      "x": -5.218793864981631,
+      "y": 252.20793139844136,
+      "properties": {
+        "value": false,
+        "brightness": 1,
+        "color": "green",
+        "lightColor": null,
+        "label": "",
+        "flip": false
+      }
+    },
+    {
+      "id": "resistor_220_1789711458027_bcvrzuodm",
+      "metadataId": "resistor-220",
+      "x": 31.019038681680613,
+      "y": 298.2021034768972,
+      "properties": {
+        "value": "220",
+        "rotation": 180
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire-1789711146126",
+      "start": {
+        "componentId": "led_1789711120454_kfe4x5k8e",
+        "pinName": "C",
+        "x": 53.453453595557065,
+        "y": 138.24107693622534
+      },
+      "end": {
+        "componentId": "esp32-devkit-c-v4",
+        "pinName": "GND.1",
+        "x": 177.12183023410316,
+        "y": 334.1812883707687
+      },
+      "waypoints": [
+        {
+          "x": 177.12183023410316,
+          "y": 138.24107693622534
+        }
+      ],
+      "color": "#000000",
+      "autoRouted": true
+    },
+    {
+      "id": "wire-1789711167363",
+      "start": {
+        "componentId": "led_1789711149902_sggt2aj0i",
+        "pinName": "C",
+        "x": 10.206154973993415,
+        "y": 226.33850351486063
+      },
+      "end": {
+        "componentId": "esp32-devkit-c-v4",
+        "pinName": "GND.1",
+        "x": 177.12183023410316,
+        "y": 334.1812883707687
+      },
+      "waypoints": [
+        {
+          "x": 10.206154973993415,
+          "y": 217.0295569884446
+        },
+        {
+          "x": 177.12183023410316,
+          "y": 217.0295569884446
+        }
+      ],
+      "color": "#000000",
+      "autoRouted": true
+    },
+    {
+      "id": "wire-1789711350226",
+      "start": {
+        "componentId": "led_1789711120454_kfe4x5k8e",
+        "pinName": "A",
+        "x": 63.453453595557065,
+        "y": 138.24107693622534
+      },
+      "end": {
+        "componentId": "resistor_220_1789711298692_mwxcg4ayu",
+        "pinName": "2",
+        "x": 85.156666584243,
+        "y": 192.99453608050456
+      },
+      "waypoints": [
+        {
+          "x": 63.453453595557065,
+          "y": 192.99453608050456
+        }
+      ],
+      "color": "#22c55e",
+      "autoRouted": true
+    },
+    {
+      "id": "wire-1789711360650",
+      "start": {
+        "componentId": "resistor_220_1789711298692_mwxcg4ayu",
+        "pinName": "1",
+        "x": 143.956666584243,
+        "y": 192.99453608050456
+      },
+      "end": {
+        "componentId": "esp32-devkit-c-v4",
+        "pinName": "25",
+        "x": 177.12183023410316,
+        "y": 271.1812883707687
+      },
+      "waypoints": [
+        {
+          "x": 169.12183023410316,
+          "y": 192.99453608050456
+        },
+        {
+          "x": 169.12183023410316,
+          "y": 271.1812883707687
+        }
+      ],
+      "color": "#22c55e",
+      "autoRouted": true
+    },
+    {
+      "id": "wire-1789711423874",
+      "start": {
+        "componentId": "led_1789711149902_sggt2aj0i",
+        "pinName": "A",
+        "x": 20.206154973993414,
+        "y": 226.33850351486063
+      },
+      "end": {
+        "componentId": "resistor_220_1789711399007_lvjef9gz6",
+        "pinName": "2",
+        "x": 71.21903868168062,
+        "y": 263.3795569884446
+      },
+      "waypoints": [
+        {
+          "x": 71.21903868168062,
+          "y": 226.33850351486063
+        }
+      ],
+      "color": "#22c55e",
+      "autoRouted": true
+    },
+    {
+      "id": "wire-1789711193979",
+      "start": {
+        "componentId": "led_1789711170444_u9s2hzej7",
+        "pinName": "C",
+        "x": 15.781206135018369,
+        "y": 300.20793139844136
+      },
+      "end": {
+        "componentId": "esp32-devkit-c-v4",
+        "pinName": "GND.1",
+        "x": 177.12183023410316,
+        "y": 334.1812883707687
+      },
+      "waypoints": [
+        {
+          "x": 15.781206135018369,
+          "y": 290.2021034768972
+        },
+        {
+          "x": 177.12183023410316,
+          "y": 290.2021034768972
+        }
+      ],
+      "color": "#000000",
+      "autoRouted": true
+    },
+    {
+      "id": "wire-1789711470202",
+      "start": {
+        "componentId": "led_1789711170444_u9s2hzej7",
+        "pinName": "A",
+        "x": 25.78120613501837,
+        "y": 300.20793139844136
+      },
+      "end": {
+        "componentId": "resistor_220_1789711458027_bcvrzuodm",
+        "pinName": "2",
+        "x": 71.21903868168062,
+        "y": 336.55210347689723
+      },
+      "waypoints": [
+        {
+          "x": 71.21903868168062,
+          "y": 300.20793139844136
+        }
+      ],
+      "color": "#22c55e",
+      "autoRouted": true
+    },
+    {
+      "id": "wire-1789711981519",
+      "start": {
+        "componentId": "esp32-devkit-c-v4",
+        "pinName": "26",
+        "x": 177.12183023410316,
+        "y": 283.1812883707687
+      },
+      "end": {
+        "componentId": "esp32-devkit-c-v4",
+        "pinName": "26",
+        "x": 177.12183023410316,
+        "y": 283.1812883707687
+      },
+      "waypoints": [],
+      "color": "#22c55e",
+      "autoRouted": true
+    },
+    {
+      "id": "wire-1789711999680",
+      "start": {
+        "componentId": "resistor_220_1789711399007_lvjef9gz6",
+        "pinName": "1",
+        "x": 130.01903868168063,
+        "y": 263.37955698844456
+      },
+      "end": {
+        "componentId": "resistor_220_1789711399007_lvjef9gz6",
+        "pinName": "1",
+        "x": 130.01903868168063,
+        "y": 263.37955698844456
+      },
+      "waypoints": [],
+      "color": "#22c55e",
+      "autoRouted": true
+    },
+    {
+      "id": "wire-1789712013888",
+      "start": {
+        "componentId": "resistor_220_1789711399007_lvjef9gz6",
+        "pinName": "1",
+        "x": 130.01903868168063,
+        "y": 263.37955698844456
+      },
+      "end": {
+        "componentId": "esp32-devkit-c-v4",
+        "pinName": "26",
+        "x": 177.12183023410316,
+        "y": 283.1812883707687
+      },
+      "waypoints": [
+        {
+          "x": 130.01903868168063,
+          "y": 282.2021034768972
+        },
+        {
+          "x": 177.12183023410316,
+          "y": 282.2021034768972
+        }
+      ],
+      "color": "#22c55e",
+      "autoRouted": true
+    },
+    {
+      "id": "wire-1789712027184",
+      "start": {
+        "componentId": "resistor_220_1789711458027_bcvrzuodm",
+        "pinName": "1",
+        "x": 130.01903868168063,
+        "y": 336.55210347689723
+      },
+      "end": {
+        "componentId": "esp32-devkit-c-v4",
+        "pinName": "27",
+        "x": 177.12183023410316,
+        "y": 296.1812883707687
+      },
+      "waypoints": [
+        {
+          "x": 130.01903868168063,
+          "y": 298.2021034768972
+        },
+        {
+          "x": 177.12183023410316,
+          "y": 298.2021034768972
+        }
+      ],
+      "color": "#22c55e",
+      "autoRouted": true
+    }
+  ],
+  "activeBoardId": "esp32-devkit-c-v4"
+}
